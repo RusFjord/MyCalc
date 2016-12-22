@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:text="0"
+        android:text="000000000000"
         android:textAlignment="textEnd"
         android:textSize="@dimen/digital_text" />
 
@@ -23,13 +23,14 @@
         android:id="@+id/main_table"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/digital_screen">
+        android:layout_below="@+id/digital_screen"
+        android:layout_alignParentBottom="true">
 
         <LinearLayout
-            android:id="@+id/first_line"
+            android:id="@+id/sixth_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_above="@+id/fifth_line"
             android:orientation="horizontal">
 
             <Button
@@ -60,10 +61,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/second_line"
+            android:id="@+id/fifth_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/first_line"
+            android:layout_above="@+id/fourth_line"
             android:orientation="horizontal">
 
             <Button
@@ -93,10 +94,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/third_line"
+            android:id="@+id/fourth_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/second_line"
+            android:layout_above="@+id/third_line"
             android:orientation="horizontal">
 
             <Button
@@ -127,10 +128,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/fourth_line"
+            android:id="@+id/third_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/third_line">
+            android:layout_above="@+id/second_line">
 
             <Button
                 android:id="@+id/button_4"
@@ -160,10 +161,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/fifth_line"
+            android:id="@+id/second_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/fourth_line"
+            android:layout_above="@+id/first_line"
             android:orientation="horizontal">
 
             <Button
@@ -194,10 +195,10 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/sixth_line"
+            android:id="@+id/first_line"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/fifth_line"
+            android:layout_alignParentBottom="true"
             android:orientation="horizontal">
 
             <Button
@@ -223,7 +224,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="=" />
-
 
         </LinearLayout>
 
